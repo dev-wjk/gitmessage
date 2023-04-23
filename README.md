@@ -1,0 +1,38 @@
+# SCRIPT
+git config --global commit.template .gitmessage.txt
+
+#   COMMIT TYPE LIST
+
+[FEATURE]       : 새로운 기능 추가  
+[FIX]           : 버그 수정  
+[REFACTOR]      : 결과 변경 없이 코드 구조 재조정 (비즈니스 로직에 변경 없음)  
+[TEST]          : 테스트 코드 추가 (비즈니스 로직에 변경 없음)  
+[DOCS]          : 문서 파일 추가, 수정, 삭제  
+[CHORE]         : 기타 변경 사항 
+
+
+#   RULES
+TYPE    : 정해진 타입 사용하기.  
+TITLE   : 작업 내용 요약 또는 명령형으로만 적기. 대문자로 시작하고 마침표 찍지 않기.  
+BODY    : 어떤걸(WHAT) 또는 왜(WHY) 했는지 간단하게 적기. 어떻게는 생략(NOT HOW). "[타입] 타이틀" 로 부터 한 줄 띄어서 작성하기. 마침표 찍지 않기.  
+AUTHOR  : 작업한 사람 정보 적기. "[BODY]" 로 부터 한 줄 띄어서 작성하기  
+
+#   EXAMPLE1
+[FEAT] Add Scroll Event Handler  
+웹페이지 스크롤 이벤트 발생 시 작동할 로직 추가  
+jake ( jake1101dev@gmail.com )  
+
+#   EXAMPLE2
+[FIX] Add onMount Handler  
+새로고침 시 헤더에 hide 클래스 추가되는 것 방지  
+jake ( jake1101dev@gmail.com )  
+
+#   EXAMPLE3
+[REFACTOR] Add full-container component  
+자주 공통적으로 사용되는 container 스타일 컴포넌트화  
+jake ( jake1101dev@gmail.com )  
+
+#   TEMPLATE
+[TYPE] TITLE  
+BODY  
+jake ( jake1101dev@gmail.com )  
